@@ -1,0 +1,198 @@
+/* app css stylesheet */
+
+.logo {
+  height: 70px;
+  width: 300px;
+}
+
+h1 {
+  border-bottom: 1px solid gray;
+}
+
+/* ------------------------------
+global styles
+------------------------------ */
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 85% arial, hevetica, sans-serif;
+	text-align: center;
+	color: #333;
+	background: #ddd url(img_39.gif) repeat 0 0;
+	}
+
+a:link { color: #B52C07; }
+a:visited { color: #b93411; }
+a:focus { color: #000; }
+a:hover { color: #7d8206; }
+a:active { color: red; }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+h2 {
+	color: #B52C07;
+	font: 140% georgia, times, "times new roman", serif;
+	}
+
+h2 a { text-decoration: none; }
+
+h3 {
+	color: #7d8206;
+	font: 110% georgia, times, "times new roman", serif;
+	}
+
+/* ------------------------------
+container styles
+------------------------------ */
+
+#container {
+	margin: 1em auto;
+	text-align: left;
+	background: #fff;
+	}
+
+/* ------------------------------
+header styles
+------------------------------ */
+
+#header {
+	height: 80px;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #fff;
+	}
+
+#header h1 {
+	position: absolute;
+	left: -500em;
+	}
+
+#skipmenu {
+	float: right;
+	margin: 0 15em; 
+	left: 0;
+	top: 5px;
+	width: 200px;
+	text-align: right;
+	}
+
+#skipmenu a {
+	color: #555;
+	text-decoration: none;
+	}
+
+/* ------------------------------
+mainnav styles
+------------------------------ */
+
+#mainnav {
+	background: #9FA41D;
+	color: #272900;
+	padding: 2px 0;
+	margin-bottom: 22px;
+	}
+
+#mainnav ul {
+	margin: 0 0 0 20px;
+	padding: 0;
+	list-style-type: none;
+	border-left: 1px solid #C4C769;
+	}
+
+#mainnav li {
+	display: inline;
+	padding: 0 10px;
+	border-right: 1px solid #C4C769;
+	}
+
+#mainnav li a {
+	text-decoration: none;
+	color: #272900;
+	}
+
+#mainnav li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #272900;
+	}
+
+/* ------------------------------
+menu styles
+------------------------------ */
+
+#menu {
+	float: right;
+	width: 250px;
+	height: 300px;
+	border: 1px solid #1E90FF;
+	background-color: #1E90FF;
+	padding-left: 50px;
+	margin: 0 10em;
+	}
+#menu h1 {
+	color: #FFFFFF;
+	text-align: left;
+	font: 140% arial;;
+	}
+	
+#menu h2 {
+	color: #FFFFFF;
+	text-align: left;
+	font: 100% arial;
+	margin: 3em 0em 0em 0em;
+	}
+
+#menu input {
+	float: left;
+	color: #000000;
+	font-size: 100%;
+	text-align: left;
+	margin: 1em 0em 2em 0em; 
+	}
+
+/* ------------------------------
+contents styles
+------------------------------ */
+
+#contents {
+	float: left;
+	width: 500px;
+	margin: 0 50px 40px 100px;
+	}
+
+#contents p { line-height: 165%; }
+.blogentry { border-bottom: 1px solid #C5C877; }
+
+.blogentry ul {
+	text-align: right;
+	margin: 1em 0;
+	padding: 0;
+	font-size: 95%;
+	}
+
+.blogentry li {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 7px;
+		}
+
+.imagefloat {
+	float: left;
+	padding: 2px;
+	border: 1px solid #1E90FF;
+	margin: 0 0 10px 10px;
+	}
+
+/* ------------------------------
+footer styles
+------------------------------ */
+
+#footer {
+	clear: both;
+	color: #272900;
+	text-align: right;
+	font-size: 90%;
+	background: #1E90FF;
+	padding: 5px;
+	}
