@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" ng-app="ledita">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-9001">
+  <title>Ledita</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/services.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+</head>
+<body>  
+<div id="container">  	
+	<div id="header">  		
+		<img class="imagefloat" src="img/logo.png" alt="" width="200" height="50" border="0"> 
+		<form id="skipmenu" ng-submit="submit()" ng-controller="Register">
+		  Nuovo Ledita?
+		  <input type="submit" id="submit" value="Crea un account" />
+		</form>
+	</div>  	
+</div>
+
+<div id="contents">  		
+  <div class="blogentry">  			 			
+	<h3>INFO ABOUT LEDITA</h3> 
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+	</p>  					
+   </div>  	
+</div>  
+ 	
+<div id="menu">  		
+	<form ng-submit="submit()" ng-controller="Login">
+		<h2>Username</h2>
+		<input name="input" ng-model="userType" required>
+		<h2>Password</h2>
+		<input name="input" ng-model="userType" required>
+		<input type="submit" id="submit" value="SIGN IN" />
+	</form>
+</div>  	
+	
+<div id="footer">  		
+Copyright ©  	
+</div>  
+</div>  
+</body>  
+<!--
+
+
+<body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+
+	 <div class="logo">
+		<img src="img/logo.png"></img> 
+	 </div>
+    </div>
+	
+    <div class="register">
+
+      <form ng-submit="submit()" ng-controller="Register">
+      Nuovo Ledita?
+      <input type="submit" id="submit" value="Crea un account" />
+    </form>
+
+    </div>
+  </div>
+</div>
+</body>
+-->  
+
+</html>
+
