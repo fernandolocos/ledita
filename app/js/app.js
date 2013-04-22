@@ -2,9 +2,9 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('ledita', ['ledita.filters', 'ledita.services', 'ledita.directives']).
+angular.module('ledita', ['ledita.filters', 'ledita.services', 'ledita.directives', 'ledita.controllers']).
   config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: MyCtrl1}});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: MyCtrl2});
-    $routeProvider.otherwise({redirectTo: '/view1'});
+    //$routeProvider.when('/view1', {templateUrl: 'view/partial1.html', controller: 'MyCtrl1'});
+    //$routeProvider.when('/view2', {templateUrl: 'view/partial2.html', controller: 'MyCtrl2'});
+    $routeProvider.otherwise({redirectTo: '/'});
   }]);
