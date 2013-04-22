@@ -115,52 +115,18 @@ mainnav styles
 	color: #fff;
 	background-color: #272900;
 	}
-
+	
 /* ------------------------------
 menu styles
 ------------------------------ */
 
 #menu {
-	float: right;
-	width: 250px;
-	height: 300px;
-	border: 1px solid #1E90FF;
-	background-color: #1E90FF;
-	padding-left: 50px;
-	margin: 0 10em;
-	}
-#menu h1 {
-	color: #FFFFFF;
-	text-align: left;
-	font: 140% arial;;
-	}
-	
-#menu h2 {
-	color: #FFFFFF;
-	text-align: left;
-	font: 100% arial;
-	margin: 3em 0em 0em 0em;
-	}
-
-#menu input {
-	float: left;
-	color: #000000;
-	font-size: 100%;
-	text-align: left;
-	margin: 1em 0em 2em 0em; 
-	}
-
-/* ------------------------------
-contents styles
------------------------------- */
-
-#contents {
 	float: left;
 	width: 500px;
 	margin: 0 50px 40px 100px;
 	}
 
-#contents p { line-height: 165%; }
+#menu p { line-height: 165%; }
 .blogentry { border-bottom: 1px solid #C5C877; }
 
 .blogentry ul {
@@ -182,6 +148,40 @@ contents styles
 	padding: 2px;
 	border: 1px solid #1E90FF;
 	margin: 0 0 10px 10px;
+	}
+
+/* ------------------------------
+contents styles
+------------------------------ */
+
+#contents {
+	float: right;
+	width: 250px;
+	height: 300px;
+	border: 1px solid #1E90FF;
+	background-color: #1E90FF;
+	padding-left: 50px;
+	margin: 0 10em;
+	}
+#contents h1 {
+	color: #FFFFFF;
+	text-align: left;
+	font: 140% arial;;
+	}
+	
+#contents h2 {
+	color: #FFFFFF;
+	text-align: left;
+	font: 100% arial;
+	margin: 3em 0em 0em 0em;
+	}
+
+#contents input {
+	float: left;
+	color: #000000;
+	font-size: 100%;
+	text-align: left;
+	margin: 1em 0em 2em 0em; 
 	}
 
 /* ------------------------------
