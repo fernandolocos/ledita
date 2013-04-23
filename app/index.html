@@ -9,10 +9,13 @@
 <body>  
 	<div id="container">  
 		<ng:include src="'view/container.html'"></ng:include>	
+		Nuovo Ledita?
+		<a href="#/register">Crea un account</a>
 	</div>
 
 	<div id="contents">  		
-		<ng:include src="'view/contents.html'"></ng:include>
+		<ng:view></ng:view><ng:include src="'view/contents.html'"></ng:include>
+		
 	</div>  
 		
 	<div id="menu">  		
