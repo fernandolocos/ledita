@@ -23,24 +23,28 @@ function getConnection() {
 	return $dbh;
 }
 
-function addWine() {
-	error_log('addWine\n', 3, '/var/tmp/php.log');
+function addUser() {
+	error_log('addUser\n', 3, '/var/tmp/php.log');
 	$request = Slim::getInstance()->request();
-	$wine = json_decode($request->getBody());
-	$sql = "INSERT INTO wine (name, grapes, country, region, year, description) VALUES (:name, :grapes, :country, :region, :year, :description)";
+	$user = json_decode($request->getBody());
+	$sql = "INSERT INTO user (name, last_name, image_id, gender, workplace, country, city, email, pass) 
+			VALUES (:name, :last_name, '1', :gender, :workplace, :country, :city, :email, :pass)";
 	try {
 		$db = getConnection();
 		$stmt = $db->prepare($sql);  
-		$stmt->bindParam("name", $wine->name);
-		$stmt->bindParam("grapes", $wine->grapes);
-		$stmt->bindParam("country", $wine->country);
-		$stmt->bindParam("region", $wine->region);
-		$stmt->bindParam("year", $wine->year);
-		$stmt->bindParam("description", $wine->description);
+		$stmt->bindParam("name", $user->name);
+		$stmt->bindParam("last_name", $user->last_name);
+		$stmt->bindParam("image_id", $user->image_id);
+		$stmt->bindParam("gender", $user->gender);
+		$stmt->bindParam("workplace", $user->workplace);
+		$stmt->bindParam("country", $user->country);
+		$stmt->bindParam("city", $user->city);
+		$stmt->bindParam("email", $user->email);
+		$stmt->bindParam("pass", $user->pass);
 		$stmt->execute();
-		$wine->id = $db->lastInsertId();
+		$user->id = $db->lastInsertId();
 		$db = null;
-		echo json_encode($wine); 
+		echo json_encode($user); 
 	} catch(PDOException $e) {
 		error_log($e->getMessage(), 3, '/var/tmp/php.log');
 		echo '{"error":{"text":'. $e->getMessage() .'}}'; 
