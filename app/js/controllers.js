@@ -1,15 +1,30 @@
 'use strict';
 
 /* Controllers */
+/*
+function RegisterCtrl(User) {
+	  
+	this.user = User.get({userId:this.params.userId});
+	
+	this.addUser = function () {
+	    if (this.user.id > 0)
+	        this.user.$update({userId:this.user.id});
+	    else
+	        this.user.$save();
+	    window.location = "#/register";
+	}
+}
+*/
+
 
 angular.module('ledita.controllers', []).
-  controller('MyCtrl1', [function() {
+  controller('RegisterCtrl', [function() {
 
   }])
   .controller('MyCtrl2', [function() {
 
   }]);
- /* 
+ /*
 function RouteCtrl($route) {
 
     var self = this;

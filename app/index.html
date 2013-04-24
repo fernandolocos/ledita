@@ -8,22 +8,22 @@
 </head>
 <body>  
 	<div id="container">  
-		<ng:include src="'view/container.html'"></ng:include>	
+		<ng:include src="'views/container.html'"></ng:include>	
 		Nuovo Ledita?
 		<a href="#/register">Crea un account</a>
 	</div>
+	<ng:view></ng:view>
 
 	<div id="contents">  		
-		<ng:view></ng:view><ng:include src="'view/contents.html'"></ng:include>
-		
+		<ng:include src="'views/contents.html'"></ng:include>
 	</div>  
 		
 	<div id="menu">  		
-		<ng:include src="'view/menu.html'"></ng:include>
+		<ng:include src="'views/menu.html'"></ng:include>
 	</div>  	
 		
 	<div id="footer">  		
-		<ng:include src="'view/footer.html'"></ng:include>
+		<ng:include src="'views/footer.html'"></ng:include>
 	</div>  
 	
 	<script src="lib/angular/angular.js"></script>
