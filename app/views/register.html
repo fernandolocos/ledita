@@ -1,0 +1,28 @@
+<form class="form-register" ng-controller="RegisterCtrl">
+    <label>Name:</label>
+    <input type="text" name="user.name" required/>
+
+    <label>Last Name:</label>
+    <input type="text" name="user.last_name"/>
+
+    <label>Gender:</label>
+    <input type="radio" ng-model="user.gender" value="male">  Male <br required/>
+    <input type="radio" ng-model="user.gender" value="female"> Female <br required/>
+    
+    <label>Workplace:</label>
+    <input type="text" name="user.workplace" />
+    
+    <label>City:</label>
+    <input type="text" name="user.city"/>
+    
+    <label>Country:</label>
+    <input type="text" name="user.country"/>
+
+    <label>Email:</label>
+    <input type="text" name="user.email" required/>
+
+    <label>Password:</label>
+    <input type="text" name="user.pass" required/><br>
+
+    <button class="save" ng:click="addUser()">Save</button>
+</form>
